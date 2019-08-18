@@ -13,10 +13,13 @@ Using React.Context allows any component order and nesting, still providing a di
     </div>
     <div>
       <Toggler.Content>
-        <Modal>
+        <Modal onOk={() => console.log('Do anything')}>
           <p>Some contents...</p>
         </Modal>
       </Toggler.Content>
     </div>
   </Toggler>
 ```
+Basic functionality of such approach is as follows:
+* Toggler.Trigger can modify state of the Toggler.Content, e.g. toggle visibility
+* All functionality of the Modal like "onOk" click handling is supported alongside with visibility toggling, e.g. if user clicks on "OK" button inside of the Modal component, it will also hide the Modal while visibility is controlled by parent wrapper (Toggler component).
