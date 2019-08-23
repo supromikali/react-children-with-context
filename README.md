@@ -23,3 +23,7 @@ Using React.Context allows any component order and nesting, still providing a di
 Basic functionality of such approach is as follows:
 * Toggler.Trigger can modify state of the Toggler.Content, e.g. toggle visibility
 * All functionality of the Modal like "onOk" click handling is supported alongside with visibility toggling, e.g. if user clicks on "OK" button inside of the Modal component, it will also hide the Modal while visibility is controlled by parent wrapper (Toggler component).
+
+# This repo is used as an example in my article
+
+Building React Components using children props and Context API https://blog.soshace.com/en/javascript/building-react-components-using-children-props-and-context-api/
