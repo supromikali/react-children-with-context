@@ -2,7 +2,7 @@ import React from "react";
 const TogglerContext = React.createContext();
 
 const renderChildren = (children, props) => context =>
-  React.Children.toArray(children).map(el =>
+  React.Children.map(children, el =>
     React.cloneElement(el, props(context, el))
   );
 
